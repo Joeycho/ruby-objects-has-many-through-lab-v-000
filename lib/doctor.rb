@@ -25,7 +25,7 @@ end
 
   def patients
     patients = self.appointments.collect do
-      binding.pry
+    #  binding.pry
       |ap| ap.patient
     end
     patients
