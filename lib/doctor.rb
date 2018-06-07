@@ -24,10 +24,11 @@ def appointments
 end
 
   def patients
-    self.appointments.collect do
+    patients = self.appointments.collect do
       binding.pry
       |ap| ap.patient
     end
+    patients
   end
 
 end
