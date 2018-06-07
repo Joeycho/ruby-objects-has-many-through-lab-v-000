@@ -1,4 +1,3 @@
-require 'pry'
 class Doctor
 @@all = []
 
@@ -25,7 +24,6 @@ end
 
   def patients
     patients = self.appointments.collect do
-      binding.pry
       |ap| ap.patient
     end
     patients
