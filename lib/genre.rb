@@ -1,3 +1,3 @@
-class genre
+class Genre
 
 end
