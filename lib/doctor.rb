@@ -26,7 +26,7 @@ end
   def patients
     self.appointments.collect do
       binding.pry
-      |song| song.patient
+      |ap| ap.patient
     end
   end
 
