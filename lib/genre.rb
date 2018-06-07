@@ -1,7 +1,7 @@
 class Genre
   @@all = []
 
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :songs
 
   def self.all
     @@all
@@ -13,6 +13,13 @@ class Genre
   end
 
   def new_song(name, artist)
+    Song.new(name,artist, self)
+  end
 
+  def songs
+    Song.all.select do
+      |song| song.genre == self
+    end
+  end
 
 end
