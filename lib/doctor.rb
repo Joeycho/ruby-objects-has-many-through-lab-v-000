@@ -13,6 +13,19 @@ def initialize(name)
 end
 
 def new_appointment(date, paitient)
-  
+  Appointment.new(date,paitient,self)
 end
+
+def appointments
+  Appointment.all.select do
+    |song| song.doctor == self
+  end
+end
+
+def patients
+  self.appointments.collect do
+    |song| song.paitient
+  end
+end
+
 end
