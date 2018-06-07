@@ -1,3 +1,4 @@
+require 'pry'
 class Doctor
 @@all = []
 
@@ -24,6 +25,7 @@ end
 
   def patients
     self.appointments.collect do
+      binding.pry
       |song| song.patient
     end
   end
