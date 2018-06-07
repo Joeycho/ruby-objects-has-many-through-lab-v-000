@@ -11,7 +11,7 @@ end
 def initialize(patient,date,doctor)
   @date = date
   @patient = patient
-  binding.pry
+#  binding.pry
   @doctor = doctor
   self.class.all << self
 end
