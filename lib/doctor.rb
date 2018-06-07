@@ -22,10 +22,10 @@ def appointments
   end
 end
 
-def patients
-  self.appointments.collect do
-    |song| song.paitient
+  def patients
+    self.appointments.collect do
+      |song| song.paitient
+    end
   end
-end
 
 end
