@@ -13,4 +13,5 @@ def initialize(name,paitient,doctor)
   @doctor = doctor
   self.class.all << self
 end
+
 end
