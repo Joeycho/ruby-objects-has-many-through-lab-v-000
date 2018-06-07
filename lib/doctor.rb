@@ -12,8 +12,8 @@ def initialize(name)
   self.class.all << self
 end
 
-def new_appointment(date, paitient)
-  Appointment.new(date,paitient,self)
+def new_appointment(date, patient)
+  Appointment.new(date,patient,self)
 end
 
 def appointments
@@ -22,9 +22,9 @@ def appointments
   end
 end
 
-  def paitients
+  def patients
     self.appointments.collect do
-      |song| song.paitient
+      |song| song.patient
     end
   end
 
