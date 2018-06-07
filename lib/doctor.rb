@@ -23,7 +23,7 @@ def appointments
   end
 end
 
-  def patients
+  def paitients
     self.appointments.collect do
       binding.pry
       |song| song.paitient
